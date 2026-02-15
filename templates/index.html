@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DoPgen Web</title>
+</head>
+<body>
+    <h2>DoPgen - Traductor Profesional</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <label>Nombre del producto:</label><br>
+        <input type="text" name="producto" required><br><br>
+
+        <label>Sube el Word (.docx):</label><br>
+        <input type="file" name="word" required><br><br>
+
+        <label>Sube tu archivo traducciones.xlsx:</label><br>
+        <input type="file" name="excel" required><br><br>
+
+        <label>Idioma:</label><br>
+        <select name="idioma">
+            <option>Inglés</option>
+            <option>Francés</option>
+            <option>Portugués</option>
+            <option>Todos</option>
+        </select><br><br>
+
+        <button type="submit">Traducir</button>
+    </form>
+</body>
+</html>
